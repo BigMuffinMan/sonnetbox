@@ -29,7 +29,29 @@
         <h1>Share your Poem!</h1>
         <form method="post">
           <textarea cols="400" rows="40"></textarea>
-          <br />
+          <div class="result">
+            <div class="grid">
+              <div class="col med-col-1-2">
+                <div class="result-item">
+                  <strong>Paragraphs: </strong><span class="result-count" id="result__paragraphs">0</span>
+                </div>
+              </div>
+              <div class="col med-col-1-2">
+                <div class="result-item">
+                  <strong>Words: </strong><span class="result-count" id="result__words">0</span>
+                </div>
+              </div>
+              <div class="col med-col-1-2">
+                <div class="result-item">
+                  <strong>Characters: </strong><span class="result-count" id="result__characters">0</span>
+                </div>
+              </div>
+              <div class="col med-col-1-2">
+                <div class="result-item">
+                  <strong>Characters (with spaces): </strong><span class="result-count" id="result__all">0</span>
+                </div>
+              </div>
+            </div>
           <button type="submit" class="button_1">Submit</button>
         </form>
       </div>
@@ -40,5 +62,6 @@
     <footer>
       <p>Sonnet Box, Copyright &copy; 2017</p>
     </footer>
+    <script src = "js\counter.js"></script>
   </body>
 </html>
